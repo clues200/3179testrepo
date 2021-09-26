@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "% of Adult Smokers 2018",
+    "width": 800,
+    "height": 600,
+    "projection": {"type": "equirectangular"},
+    "data": {
+    "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+    },
+    "transform": [
+    {
+    "lookup": "properties.NAME",
+    "from": {
+    "data": {
+    "url": "https://raw.githubusercontent.com/clues200/3179testrepo/main/smoking%20rates.csv"
+    },
+    "key": "Country name",
+    "fields": ["percent"]
+    }
+    }
+    ],
+    "mark": {"type": "geoshape"},
+    "encoding": {
+    "color": {
+    "field": "percent",
+    "type": "quantitative",
+    "scale": {
+        "type": "threshold",
+        "domain": [10, 20, 30,40,50],
+        "range": ["#ffe8de", "#ffcab3", "#ffa680", "#ff8552", "#ff6626", "#ff4b00"]
+    }
+    
+    
+    },
+    "tooltip": [
+    {"field": "properties.NAME", "type": "nominal", "title": "Country name"},
+    {"field": "percent", "type": "quantitative"}
+    ]
+    }
+   }
