@@ -1,0 +1,72 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 400,
+    "title": "Household Expenditure on Tabacco (percent)",
+    "data": {
+    "url": "https://raw.githubusercontent.com/clues200/3179testrepo/main/metrics.csv"
+    },
+    
+     "params":[
+ {
+ "name": "affordability_highlight",
+ "select": {"type": "point", "fields": ["Affordability of Tobacco Index"]},
+ "bind": "legend"
+ }
+ ],
+    
+    "mark": "circle",
+    "encoding": {
+    "x": {
+    "field": "Year",
+    "type": "quantitative",
+    "title": "Year",
+    "axis": {"tickCount": 7},
+    "scale": {"domain" : [1985,2015]} 
+    },
+    "y": {
+    "title": "Expenditure (%)",
+    "field": "Expenditure on Tobacco as a Percentage of Expenditure",
+    "type": "quantitative"
+    },
+    
+    
+    "size": {
+    "field": "Affordability of Tobacco Index",
+    "type": "quantitative",
+    "scale": {
+        "type": "threshold",
+        "domain": [50, 60, 70, 80, 90,100],
+        "range": [10, 50, 90, 130, 170, 210,250]
+        },
+        "legend": {"format": ".1s"}
+
+       
+    
+    
+       
+
+
+
+    },
+    "opacity": {
+        "condition": {"param": "affordability_highlight", "value": 0.6},
+        "value": 0.2
+       
+
+
+
+    },
+    "tooltip": [
+        {"field": "Year", "type": "quantitative"},
+        {"field": "Expenditure on Tobacco as a Percentage of Expenditure", "title": "Expenditure (%)", "type": "quantitative", "format": ","},
+        {"field": "Affordability of Tobacco Index", "type": "quantitative", "format": ","}
+        ]
+    }
+
+    
+
+
+
+
+   }
