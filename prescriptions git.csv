@@ -1,12 +1,45 @@
-Year,All Pharmacotherapy Prescriptions,Nicotine Replacement Therapy (NRT) Prescriptions,Bupropion (Zyban) Prescriptions,Varenicline (Champix) Prescriptions
-2015,1348,766,21,561
-2014,1778,1059,22,697
-2013,2203,1318,26,859
-2012,2532,1545,30,957
-2011,2564,1541,36,987
-2010,2483,1559,47,877
-2009,2263,1492,58,714
-2008,2475,1756,107,612
-2007,2079,1938,119,22
-2006,2205,2076,129,
-2005,2044,1908,136,
+Year,Prescription,Amount
+2015,All Pharmacotherapy Prescriptions,1348
+2015,Nicotine Replacement Therapy (NRT) Prescriptions,766
+2015,Bupropion (Zyban) Prescriptions,21
+2015,Varenicline (Champix) Prescriptions,561
+2014,All Pharmacotherapy Prescriptions,1778
+2014,Nicotine Replacement Therapy (NRT) Prescriptions,1059
+2014,Bupropion (Zyban) Prescriptions,22
+2014,Varenicline (Champix) Prescriptions,697
+2013,All Pharmacotherapy Prescriptions,2203
+2013,Nicotine Replacement Therapy (NRT) Prescriptions,1318
+2013,Bupropion (Zyban) Prescriptions,26
+2013,Varenicline (Champix) Prescriptions,859
+2012,All Pharmacotherapy Prescriptions,2532
+2012,Nicotine Replacement Therapy (NRT) Prescriptions,1545
+2012,Bupropion (Zyban) Prescriptions,30
+2012,Varenicline (Champix) Prescriptions,957
+2011,All Pharmacotherapy Prescriptions,2564
+2011,Nicotine Replacement Therapy (NRT) Prescriptions,1541
+2011,Bupropion (Zyban) Prescriptions,36
+2011,Varenicline (Champix) Prescriptions,987
+2010,All Pharmacotherapy Prescriptions,2483
+2010,Nicotine Replacement Therapy (NRT) Prescriptions,1559
+2010,Bupropion (Zyban) Prescriptions,47
+2010,Varenicline (Champix) Prescriptions,877
+2009,All Pharmacotherapy Prescriptions,2263
+2009,Nicotine Replacement Therapy (NRT) Prescriptions,1492
+2009,Bupropion (Zyban) Prescriptions,58
+2009,Varenicline (Champix) Prescriptions,714
+2008,All Pharmacotherapy Prescriptions,2475
+2008,Nicotine Replacement Therapy (NRT) Prescriptions,1756
+2008,Bupropion (Zyban) Prescriptions,107
+2008,Varenicline (Champix) Prescriptions,612
+2007,All Pharmacotherapy Prescriptions,2079
+2007,Nicotine Replacement Therapy (NRT) Prescriptions,1938
+2007,Bupropion (Zyban) Prescriptions,119
+2007,Varenicline (Champix) Prescriptions,22
+2006,All Pharmacotherapy Prescriptions,2205
+2006,Nicotine Replacement Therapy (NRT) Prescriptions,2076
+2006,Bupropion (Zyban) Prescriptions,129
+2006,Varenicline (Champix) Prescriptions,0
+2005,All Pharmacotherapy Prescriptions,2044
+2005,Nicotine Replacement Therapy (NRT) Prescriptions,1908
+2005,Bupropion (Zyban) Prescriptions,136
+2005,Varenicline (Champix) Prescriptions,0
