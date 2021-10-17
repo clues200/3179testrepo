@@ -1,0 +1,45 @@
+
+
+h1 { font-family: 'Raleway', sans-serif;
+    font-size: 65px;
+    }
+
+h2 { font-family: 'Raleway', sans-serif;
+font-size: 20px;
+font-weight: 300;}
+
+p {font-family: 'Source Sans Pro', sans-serif;
+    }
+
+.sources {font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 700;}
+.links {font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+    font-weight: 400;}
+
+.container{
+    width: 100%;
+    background-color: #e6ffe6;
+    }
+
+.hdesc{ padding-right: 25px;}
+.titlepad{padding-left: 150px;}
+.subtitlepad{padding-left: 470px;}
+.leftpad{padding-left: 2000;
+    background-color: #e6ffe6;}
+.rightpad{padding-right: 2000;}
+.page{background-color: #e6ffe6;}
+
+#l-align {
+    text-align : left
+}
+
+#c-align {
+    text-align : center
+}
+
+#r-align {
+    text-align : right
+}
+

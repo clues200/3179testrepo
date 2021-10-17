@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 350,
+  "height": 230,
+  "title": "Use of Smoking Cessation Medication",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/clues200/3179testrepo/main/prescriptions%20git.csv"
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "Year",
+      "title": "Year"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Amount",
+      "type": "quantitative",
+      "title": "Relative Amount"
+    },
+    "color": {
+      "field": "Prescription",
+      "type": "nominal"
+    },
+    "tooltip": [
+      
+      {
+        "field": "Amount",
+        "type": "quantitative",
+        "title": "Relative Amount"
+      }
+      
+      ]
+  }
+}

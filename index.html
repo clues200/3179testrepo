@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Reduction in tabacoo smoking </title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +10,166 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&family=Source+Sans+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+
+
+
     <script src="vega_lite_vis.js"></script>
 
-    <title>Reduction in tabacoo smoking </title>
+    <link rel="stylesheet" href="css.css">
+
+
 
 
 </head>
 
 <body>
+<div class = page>
+    <h1 class = "titlepad">Reduction in Tabacoo Smoking </h1>
+    <h2 class = "subtitlepad">Kris Abraham for FIT3179 </h1>
+    <div class = "pure-g", class = "leftpad"> 
+        
+            <div class = "pure-u-1-2", class = "leftpad">
+                <div class = "leftpad">
+                    
+                    <p class = "description leftpad-right", id = "c-align"> 
+                        <br> <br> <br> <br>                                                                                                                                                                                                
+                        The negative effects of tabacoo smoking have become more well known in the recent years. This
+                        visualisation looks at how this has changed attitudes and reduced the popularity of smoking. Such downward trends increase the likelihood
+                        of a healthier population here in Australia. 
+                
+                    </p>
+                </div>
+            </div>
+            <div class = "pure-u-1-2", class = "leftpad"> 
+                <div id="choropleth_map" class="container"></div>
+            </div>
+        
+    </div>
+
+    <div class = "pure-g", class = "leftpad"> 
+
+        <div class = "pure-u-1-2", class = "leftpad"> 
+            <div id="bubble_plot" class="container"></div>
+        </div>
+        
+        <div class = "pure-u-1-2", class = "leftpad">
+            <div class = "leftpad">
+                
+                <p class = "leftpad", id = "c-align"> <br> <br> <br> <br> <br>
+                    From this graph it can be seen that the percent of income that a household spends on tabacco has 
+                    reduced over the years.
+            
+                </p>
+            </div>
+        </div>
+        
     
-    <div id="choropleth_map">
+    </div>
+    
+    <div class = "pure-g", class = "leftpad"> 
+
+        <div class = "pure-u-1-2",> 
+            <div id="numsmokers" class="container"></div>
+        </div>
+
+        <div class = "pure-u-1-2",> 
+            <div id="numfemalesmokers" class="container"></div>
+        </div>
+
+        
+               
+        
+    
+    </div> 
+
+    <div class = "pure-g", class = "leftpad"> 
+
+        <div class = "pure-u-1-2", class = "leftpad">
+            <div class = "leftpad">
+                
+                <p class = "leftpad", id = "c-align">   <br> <br> <br> <br> <br> <br> 
+                    The stacked area charts further highlight the downward trend in smoking
+                    amongst Males and Females
+            
+                </p>
+            </div>
+        </div>
+        
+
+        <div class = "pure-u-1-2",> 
+            <div id="nummalesmokers" class="container"></div>
+        </div>
+        
+        
+    
+    </div>
+        
+
+    <div class = "pure-g", class = "leftpad"> 
+
+        <div class = "pure-u-1-2",> 
+            <div id="prescription" class="container"></div>
+        </div>
+
+        <div class = "pure-u-1-2",> 
+            <div id="smokingfat" class="container"></div>
     </div>
 
-    <h1>Household Spend on Tabacco</h1>
-    <div id="bubble_plot">
+
+    <div class = "pure-g", class = "leftpad"> 
+
+        <div class = "pure-u-1-2", class = "leftpad">
+            
+                
+                <p class = "leftpad", id = "c-align">   <br> <br>
+                    The decrease in smoking deterent prescription medication, has fallen.
+                    This could possibly be due to the decrease in smokers. However, this chart is not as 
+                    conclusive as the others.
+
+            
+                </p>
+            
+        </div>
+        
+
+        <div class = "pure-u-1-2",> 
+            <p class = "leftpad", id = "c-align">   <br> <br> 
+                The relative amount of fatalities from a disease that can be caused by smoking is reducing every
+                year for both genders. 
+        </div>
+    
     </div>
 
 
+    <div class = "pure-g", class = "leftpad"> 
+        <div class = "pure-u-1-1",> 
+            <p class = "sources">
+                Sources:
+            </p>
+        </div>
+        <div class = "pure-u-1-1",> 
+            <p class = "links">
+                
+                https://www.kaggle.com/nhs/tobacco-use <br>
+                https://ourworldindata.org/which-countries-smoke-most
+
+                
+            </p>
+        </div>
+    </div>
+
+    
+
+</div>
 
 
 </body>

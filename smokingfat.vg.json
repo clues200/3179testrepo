@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Deaths from smoking related diseases",
+  "data": {
+    "url": "https://raw.githubusercontent.com/clues200/3179testrepo/main/smoking%20fat%20git.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.Sex == 2 ? 'Female' : 'Male'",
+      "as": "gender"
+    },
+    {
+      "calculate": "datum.Sex == 2 ? -datum.Value : datum.Value",
+      "as": "value"
+    }
+  ],
+  "width": 544,
+  "height": 200,
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "Year",
+      "sort": "descending"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "value",
+      "title": "Fatalities Relative to Each Year",
+      "axis": {
+        "format": "s",
+        "values": [
+          "0"
+        ]
+      }
+    },
+    "color": {
+      "field": "gender",
+      "scale": {
+        "range": [
+          "#675193",
+          "#ca8861"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "title": null
+      }
+    }
+  },
+  "config": {
+    "axis": {
+      "grid": false
+    }
+  }
+  
+}

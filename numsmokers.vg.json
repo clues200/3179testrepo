@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Age group of Smokers per year",
+    "width": 460, "height": 200,
+    "data": {"url": "https://raw.githubusercontent.com/clues200/3179testrepo/main/smokers%20both%20git.csv"},
+    "mark": "area",
+    "encoding": {
+      "x": {
+        "timeUnit": "year", "field": "Year",
+        "axis": {"format": "%Y"},
+        "title": "Year"
+      },
+      "y": {
+        "aggregate": "sum", "field": "Count",
+        "title": "Amount of Smokers (arbitary unit)"
+  
+      },
+      "color": {
+        "field": "Age",
+        "scale": {"scheme": "blues"}
+      }
+    }
+  }
+  

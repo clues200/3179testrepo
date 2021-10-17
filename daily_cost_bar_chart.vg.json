@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "% of Adult Smokers 2018",
-    "width": 800,
-    "height": 600,
+    "title": "Percent of Adult Smokers 2018",
+    "width": 530,
+    "height": 300,
     "projection": {"type": "equirectangular"},
     "data": {
     "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
@@ -16,7 +16,7 @@
     "url": "https://raw.githubusercontent.com/clues200/3179testrepo/main/smoking%20rates.csv"
     },
     "key": "Country name",
-    "fields": ["percent"]
+    "fields": ["percent","change","percent 2007"]
     }
     }
     ],
@@ -34,8 +34,11 @@
     
     },
     "tooltip": [
-    {"field": "properties.NAME", "type": "nominal", "title": "Country name"},
-    {"field": "percent", "type": "quantitative"}
+    {"field": "properties.NAME", "type": "nominal", "title": "Country Name"},
+    {"field": "percent", "type": "quantitative", "title": "Percent in 2018"},
+    {"field": "percent 2007", "type": "quantitative", "title": "Percent in 2007"},
+    {"field": "change", "type": "quantitative", "title": "Percent Change in 11 Years"}
+    
     ]
     }
    }
