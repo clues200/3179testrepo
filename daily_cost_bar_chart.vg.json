@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Percent of Adult Smokers 2018",
+    "title": "Percent of Tobacoo Adult Smokers 2018",
     "width": 530,
     "height": 300,
     "projection": {"type": "equirectangular"},

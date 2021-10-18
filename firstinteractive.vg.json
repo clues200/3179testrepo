@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 400,
     "height": 185,
-    "title": "Household Expenditure on Tabacco (percent)",
+    "title": "Household Expenditure on Tobacco (percent)",
     "data": {
     "url": "https://raw.githubusercontent.com/clues200/3179testrepo/main/metrics.csv"
     },

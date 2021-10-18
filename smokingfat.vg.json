@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Deaths from smoking related diseases",
+  "title": "Deaths from Tobacoo Smoking Related Diseases",
   "data": {
     "url": "https://raw.githubusercontent.com/clues200/3179testrepo/main/smoking%20fat%20git.csv"
   },
